@@ -64,26 +64,56 @@
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
   }
   
   input[type="number"] {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  button:not(:disabled):hover {
+    background-color: #0056b3;
   }
   
   p {
-    font-size: 16px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  p v-if {
+    margin-top: 20px;
   }
   </style>
   
